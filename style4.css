@@ -1,0 +1,279 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(245,242,242);
+    font-family: "Fira Sans",sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C); 
+    background-color: transparent; 
+}  
+.logo { 
+    padding: 0 5rem; 
+}  
+.logo .logo-heading { 
+    color: #fff; 
+} 
+.menu { 
+    padding: 0 5rem; 
+}   
+.hamburger { 
+    display: none; 
+    color: #fff; 
+    font-size: 25px; 
+}  
+.cross-icon { 
+    display: none; 
+}   
+.menu .menu-list { 
+    display: flex; 
+    list-style: none; 
+}  
+.menu-list .menu-list-items { 
+    padding: 0.5rem 1rem; 
+}   
+@media screen and (min-width: 856px) and (max-width: 1024px) { 
+    .menu-list .menu-list-items { 
+        padding: 0.5rem 0.3rem; 
+    } 
+} 
+/*home section styles*/
+.home { 
+    display: flex; 
+    align-items: center; 
+    background-color: black; 
+    justify-content: space-between; 
+    width: 100%; 
+    height: 100%;
+    
+}   
+.home .home-text { 
+    width: 600px; 
+    color: black;
+    padding: 5rem 1rem 5rem 5rem; 
+}
+.hello{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.7rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.name{
+    text-align: center;
+    color: darkcyan;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.who{
+    text-align: center;
+    color:hotpink;
+    font-size: 2rem;
+    font-family:lucida handwriting;
+}
+.home .home-image img { 
+    height: 550px; 
+    width: 340px;  
+    box-sizing: border-box;
+} 
+/* About section styles */
+#about { 
+    display: flex; 
+    align-items: center; 
+    background-color: black;
+    width: 100%; 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+} 
+.about-col-1{
+    flex-basis: 35%;
+}  
+.row .about-col-1 img { 
+    height: 500px; 
+    width: 300px; 
+    align-items: center;   
+} 
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size:60px;
+    font-weight: 600;
+    font-style: italic;
+    color:brown;
+    text-align: center;
+    font-family:lucida handwriting;
+}
+.sub-title1{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ab-detail{
+    font-size: 1.1rem;
+    text-align: left;
+    color:teal;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*skills section*/
+.skills{
+    background-color:black;
+    background-size: cover;
+    height: 100vh;
+}
+.title{
+    padding-top: 30px;
+    font-family: lucida handwriting;
+    color:crimson;
+    text-align: center;
+    font-size: 4rem;
+}
+.skill-tab{ 
+    display: flex;  
+    justify-content: space-evenly
+}  
+.box { 
+    border: 2px solid rgb(43,45,66); 
+    width: 270px;
+    padding: 20px;
+    background-color: antiquewhite;
+    box-shadow: 12px 12px 13px rgb(230,57,70);
+    color: black;
+} 
+.box-hover{
+    transform: scale(1.1);
+    animation: mybox 2s step-start 0s infinite normal;
+}
+.logo1{
+    font-size: 2.2rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: darkgoldenrod;
+}
+h2{
+    font-size: 2rem;
+    font-family: lucida handwriting;
+    color: darkred;
+}
+.detail-sk{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Project section style*/
+.projects{
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+}
+.pro{
+    font-family: lucida handwriting;
+    text-align: center;
+    font-size: 4rem;
+    color: crimson;
+    padding-top: 20px;
+}
+.pro1{
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.proj{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.prop:hover{
+    transform: scale(1.1);
+}
+.prop{
+    margin-top: 25px;
+    height: 130px;
+    width: 600px;
+    font-size: 1.4rem;
+    color:lightslategray;
+    border: 2px solid rgb(43,43,66);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 12px 12px 13px rgb(230,57,70);
+}  
+/* Contact section styles */
+.contact{
+    background-color: black;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-me{
+    position: relative;
+    left: -100px;
+    padding: 20px;
+    font-family: lucida handwriting;
+}
+h1{
+    color: crimson;
+    font-size: 3rem;
+}
+.logo2{
+    font-size: 2rem;
+    padding-top: 30px;
+    color:hotpink;
+}
+.message-me{
+    height: 35px;
+    width: 400px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    background-color: rgb(43,43,66);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.message-me1{
+    height: 155px;
+    width: 400px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    background-color: rgb(43,43,66);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+button{
+    height: 35px;
+    width: 400px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    background-color: rgb(43,43,66);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.footer { 
+    background-color: #000; 
+    color: chocolate; 
+    padding: 2rem; 
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+} 
+  
